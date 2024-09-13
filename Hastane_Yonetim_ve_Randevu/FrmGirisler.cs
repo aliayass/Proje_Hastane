@@ -24,7 +24,23 @@ namespace Hastane_Yonetim_ve_Randevu
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FormHastaGiris fr = new FormHastaGiris();
+            fr.Show();
+            this.Hide();
+        }
 
+        private void button_DoktorGirisi_Click(object sender, EventArgs e)
+        {
+            FrmDoktorGiris frmDoktorGiris = new FrmDoktorGiris();
+            frmDoktorGiris.Show();
+            this.Hide();
+        }
+
+        private void button_SekreterGirisi_Click(object sender, EventArgs e)
+        {
+            FrmSekreterGiris frm = new FrmSekreterGiris();
+            frm.Show();
+            this.Hide();
         }
     }
 }

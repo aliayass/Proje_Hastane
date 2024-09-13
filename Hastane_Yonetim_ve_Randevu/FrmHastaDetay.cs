@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hastane_Yonetim_ve_Randevu
 {
-    public partial class FrmHastaDetay_Gecmis : Form
+    public partial class FrmHastaDetay : Form
     {
-        public FrmHastaDetay_Gecmis()
+        public FrmHastaDetay()
         {
             InitializeComponent();
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaKayit));
             this.maskedTextBox_TC_NO = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +50,7 @@
             this.maskedTextBox_TC_NO.Mask = "00000000000";
             this.maskedTextBox_TC_NO.Name = "maskedTextBox_TC_NO";
             this.maskedTextBox_TC_NO.Size = new System.Drawing.Size(169, 22);
-            this.maskedTextBox_TC_NO.TabIndex = 10;
+            this.maskedTextBox_TC_NO.TabIndex = 3;
             // 
             // label3
             // 
@@ -103,7 +104,7 @@
             this.textbox_Soyad.Location = new System.Drawing.Point(199, 96);
             this.textbox_Soyad.Name = "textbox_Soyad";
             this.textbox_Soyad.Size = new System.Drawing.Size(169, 22);
-            this.textbox_Soyad.TabIndex = 11;
+            this.textbox_Soyad.TabIndex = 2;
             // 
             // maskedTextBox_TEL_NO
             // 
@@ -111,7 +112,7 @@
             this.maskedTextBox_TEL_NO.Mask = "(999) 000-0000";
             this.maskedTextBox_TEL_NO.Name = "maskedTextBox_TEL_NO";
             this.maskedTextBox_TEL_NO.Size = new System.Drawing.Size(169, 22);
-            this.maskedTextBox_TEL_NO.TabIndex = 18;
+            this.maskedTextBox_TEL_NO.TabIndex = 4;
             // 
             // label5
             // 
@@ -138,7 +139,7 @@
             this.textbox_Ad.Location = new System.Drawing.Point(199, 53);
             this.textbox_Ad.Name = "textbox_Ad";
             this.textbox_Ad.Size = new System.Drawing.Size(169, 22);
-            this.textbox_Ad.TabIndex = 19;
+            this.textbox_Ad.TabIndex = 1;
             // 
             // comboBox_Cinisyet
             // 
@@ -149,7 +150,7 @@
             this.comboBox_Cinisyet.Location = new System.Drawing.Point(199, 217);
             this.comboBox_Cinisyet.Name = "comboBox_Cinisyet";
             this.comboBox_Cinisyet.Size = new System.Drawing.Size(169, 24);
-            this.comboBox_Cinisyet.TabIndex = 20;
+            this.comboBox_Cinisyet.TabIndex = 5;
             // 
             // button1
             // 
@@ -161,13 +162,16 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "Üye Ol";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmHastaKayit
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(476, 394);
+            this.ClientSize = new System.Drawing.Size(492, 394);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox_Cinisyet);
             this.Controls.Add(this.textbox_Ad);
@@ -181,8 +185,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_Sifre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmHastaKayit";
-            this.Text = "FrmHastaKayit";
+            this.Text = "Hasta Kayıt";
             this.ResumeLayout(false);
             this.PerformLayout();
 

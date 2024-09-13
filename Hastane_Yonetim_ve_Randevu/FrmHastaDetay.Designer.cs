@@ -1,6 +1,6 @@
 ﻿namespace Hastane_Yonetim_ve_Randevu
 {
-    partial class FrmHastaDetay_Gecmis
+    partial class FrmHastaDetay
     {
         /// <summary>
         /// Required designer variable.
@@ -248,7 +248,7 @@
             this.link_BilgiDüzenle.TabStop = true;
             this.link_BilgiDüzenle.Text = "Bilgilerimi Düzenle";
             // 
-            // FrmHastaDetay_Gecmis
+            // FrmHastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -258,7 +258,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FrmHastaDetay_Gecmis";
+            this.Name = "FrmHastaDetay";
             this.Text = "FrmHastaDetay";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

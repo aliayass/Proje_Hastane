@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDrBilgiDüzenle));
             this.textbox_Ad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,7 +47,7 @@
             this.textbox_Ad.Location = new System.Drawing.Point(198, 29);
             this.textbox_Ad.Name = "textbox_Ad";
             this.textbox_Ad.Size = new System.Drawing.Size(169, 30);
-            this.textbox_Ad.TabIndex = 38;
+            this.textbox_Ad.TabIndex = 1;
             // 
             // label1
             // 
@@ -73,7 +74,7 @@
             this.textbox_Soyad.Location = new System.Drawing.Point(198, 72);
             this.textbox_Soyad.Name = "textbox_Soyad";
             this.textbox_Soyad.Size = new System.Drawing.Size(169, 30);
-            this.textbox_Soyad.TabIndex = 35;
+            this.textbox_Soyad.TabIndex = 2;
             // 
             // maskedTextBox_TC_NO
             // 
@@ -81,7 +82,7 @@
             this.maskedTextBox_TC_NO.Mask = "00000000000";
             this.maskedTextBox_TC_NO.Name = "maskedTextBox_TC_NO";
             this.maskedTextBox_TC_NO.Size = new System.Drawing.Size(169, 30);
-            this.maskedTextBox_TC_NO.TabIndex = 34;
+            this.maskedTextBox_TC_NO.TabIndex = 3;
             // 
             // label2
             // 
@@ -100,7 +101,7 @@
             this.button_guncelle.Location = new System.Drawing.Point(198, 238);
             this.button_guncelle.Name = "button_guncelle";
             this.button_guncelle.Size = new System.Drawing.Size(169, 51);
-            this.button_guncelle.TabIndex = 41;
+            this.button_guncelle.TabIndex = 6;
             this.button_guncelle.Text = "Güncelle";
             this.button_guncelle.UseVisualStyleBackColor = false;
             // 
@@ -119,7 +120,7 @@
             this.textBox_Sifre.Location = new System.Drawing.Point(198, 192);
             this.textBox_Sifre.Name = "textBox_Sifre";
             this.textBox_Sifre.Size = new System.Drawing.Size(169, 30);
-            this.textBox_Sifre.TabIndex = 39;
+            this.textBox_Sifre.TabIndex = 5;
             // 
             // label5
             // 
@@ -137,10 +138,11 @@
             this.comboBox_Brans.Location = new System.Drawing.Point(197, 153);
             this.comboBox_Brans.Name = "comboBox_Brans";
             this.comboBox_Brans.Size = new System.Drawing.Size(170, 33);
-            this.comboBox_Brans.TabIndex = 44;
+            this.comboBox_Brans.TabIndex = 4;
             // 
             // FrmDrBilgiDüzenle
             // 
+            this.AcceptButton = this.button_guncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
@@ -157,9 +159,10 @@
             this.Controls.Add(this.maskedTextBox_TC_NO);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmDrBilgiDüzenle";
-            this.Text = "FrmDrBilgiDüzenle";
+            this.Text = "Doktor Bilgi Düzenle";
             this.ResumeLayout(false);
             this.PerformLayout();
 

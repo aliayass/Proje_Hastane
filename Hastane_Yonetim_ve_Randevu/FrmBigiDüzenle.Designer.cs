@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBigiDüzenle));
             this.button_guncelle = new System.Windows.Forms.Button();
             this.comboBox_Cinisyet = new System.Windows.Forms.ComboBox();
             this.textbox_Ad = new System.Windows.Forms.TextBox();
@@ -50,9 +51,10 @@
             this.button_guncelle.Location = new System.Drawing.Point(182, 307);
             this.button_guncelle.Name = "button_guncelle";
             this.button_guncelle.Size = new System.Drawing.Size(168, 51);
-            this.button_guncelle.TabIndex = 34;
+            this.button_guncelle.TabIndex = 8;
             this.button_guncelle.Text = "Güncelle";
             this.button_guncelle.UseVisualStyleBackColor = false;
+            this.button_guncelle.Click += new System.EventHandler(this.button_guncelle_Click);
             // 
             // comboBox_Cinisyet
             // 
@@ -63,14 +65,14 @@
             this.comboBox_Cinisyet.Location = new System.Drawing.Point(181, 227);
             this.comboBox_Cinisyet.Name = "comboBox_Cinisyet";
             this.comboBox_Cinisyet.Size = new System.Drawing.Size(169, 33);
-            this.comboBox_Cinisyet.TabIndex = 33;
+            this.comboBox_Cinisyet.TabIndex = 6;
             // 
             // textbox_Ad
             // 
             this.textbox_Ad.Location = new System.Drawing.Point(181, 63);
             this.textbox_Ad.Name = "textbox_Ad";
             this.textbox_Ad.Size = new System.Drawing.Size(169, 30);
-            this.textbox_Ad.TabIndex = 32;
+            this.textbox_Ad.TabIndex = 1;
             // 
             // maskedTextBox_TEL_NO
             // 
@@ -78,7 +80,7 @@
             this.maskedTextBox_TEL_NO.Mask = "(999) 000-0000";
             this.maskedTextBox_TEL_NO.Name = "maskedTextBox_TEL_NO";
             this.maskedTextBox_TEL_NO.Size = new System.Drawing.Size(169, 30);
-            this.maskedTextBox_TEL_NO.TabIndex = 31;
+            this.maskedTextBox_TEL_NO.TabIndex = 5;
             // 
             // label5
             // 
@@ -125,7 +127,7 @@
             this.textbox_Soyad.Location = new System.Drawing.Point(181, 106);
             this.textbox_Soyad.Name = "textbox_Soyad";
             this.textbox_Soyad.Size = new System.Drawing.Size(169, 30);
-            this.textbox_Soyad.TabIndex = 26;
+            this.textbox_Soyad.TabIndex = 2;
             // 
             // maskedTextBox_TC_NO
             // 
@@ -133,7 +135,7 @@
             this.maskedTextBox_TC_NO.Mask = "00000000000";
             this.maskedTextBox_TC_NO.Name = "maskedTextBox_TC_NO";
             this.maskedTextBox_TC_NO.Size = new System.Drawing.Size(169, 30);
-            this.maskedTextBox_TC_NO.TabIndex = 25;
+            this.maskedTextBox_TC_NO.TabIndex = 3;
             // 
             // label3
             // 
@@ -160,10 +162,11 @@
             this.textBox_Sifre.Location = new System.Drawing.Point(182, 269);
             this.textBox_Sifre.Name = "textBox_Sifre";
             this.textBox_Sifre.Size = new System.Drawing.Size(168, 30);
-            this.textBox_Sifre.TabIndex = 22;
+            this.textBox_Sifre.TabIndex = 7;
             // 
             // FrmBigiDüzenle
             // 
+            this.AcceptButton = this.button_guncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
@@ -182,9 +185,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_Sifre);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmBigiDüzenle";
-            this.Text = "FrmBigiDüzenle";
+            this.Text = "Bigi Düzenle";
+            this.Load += new System.EventHandler(this.FrmBigiDüzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

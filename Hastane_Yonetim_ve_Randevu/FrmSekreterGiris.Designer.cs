@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSekreterGiris));
+            this.maskedTextBox_tc = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Sifre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // maskedTextBox1
+            // maskedTextBox_tc
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(249, 127);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(169, 30);
-            this.maskedTextBox1.TabIndex = 12;
+            this.maskedTextBox_tc.Location = new System.Drawing.Point(249, 127);
+            this.maskedTextBox_tc.Mask = "00000000000";
+            this.maskedTextBox_tc.Name = "maskedTextBox_tc";
+            this.maskedTextBox_tc.Size = new System.Drawing.Size(169, 30);
+            this.maskedTextBox_tc.TabIndex = 1;
+            this.maskedTextBox_tc.Text = "12345678910";
             // 
             // label3
             // 
@@ -84,30 +86,38 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Giriş Yap";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // textBox_Sifre
             // 
-            this.textBox1.Location = new System.Drawing.Point(249, 176);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 30);
-            this.textBox1.TabIndex = 7;
+            this.textBox_Sifre.Location = new System.Drawing.Point(249, 176);
+            this.textBox_Sifre.Name = "textBox_Sifre";
+            this.textBox_Sifre.Size = new System.Drawing.Size(169, 30);
+            this.textBox_Sifre.TabIndex = 2;
+            this.textBox_Sifre.Text = "123";
+            this.textBox_Sifre.UseSystemPasswordChar = true;
             // 
             // FrmSekreterGiris
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Plum;
             this.ClientSize = new System.Drawing.Size(616, 305);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.maskedTextBox_tc);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_Sifre);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimizeBox = false;
             this.Name = "FrmSekreterGiris";
-            this.Text = "FrmSekreterGiris";
+            this.Text = "Sekreter Giriş";
+            this.Load += new System.EventHandler(this.FrmSekreterGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,11 +125,11 @@
 
         #endregion
 
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox_tc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Sifre;
     }
 }

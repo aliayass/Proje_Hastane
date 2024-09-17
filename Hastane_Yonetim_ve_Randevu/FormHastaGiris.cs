@@ -28,6 +28,7 @@ namespace Hastane_Yonetim_ve_Randevu
             if (dr.Read())
             {
                 FrmHastaDetay frm = new FrmHastaDetay();
+                frm.tc = maskedTextBox_TCNO.Text;
                 frm.Show();
                 this.Hide();
             }
@@ -40,9 +41,15 @@ namespace Hastane_Yonetim_ve_Randevu
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
             FrmHastaKayit frm = new FrmHastaKayit();
             frm.Show();
+            
+        }
 
+        private void FormHastaGiris_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

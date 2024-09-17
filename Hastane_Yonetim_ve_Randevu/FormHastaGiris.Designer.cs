@@ -43,7 +43,7 @@
             this.textBox_Sifre.Location = new System.Drawing.Point(241, 151);
             this.textBox_Sifre.Name = "textBox_Sifre";
             this.textBox_Sifre.Size = new System.Drawing.Size(169, 22);
-            this.textBox_Sifre.TabIndex = 0;
+            this.textBox_Sifre.TabIndex = 2;
             this.textBox_Sifre.UseSystemPasswordChar = true;
             // 
             // button1
@@ -53,7 +53,7 @@
             this.button1.Location = new System.Drawing.Point(241, 193);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 41);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Giriş Yap";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -76,7 +76,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(285, 250);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(72, 25);
-            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Üye Ol";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -107,7 +107,7 @@
             this.maskedTextBox_TCNO.Mask = "00000000000";
             this.maskedTextBox_TCNO.Name = "maskedTextBox_TCNO";
             this.maskedTextBox_TCNO.Size = new System.Drawing.Size(169, 22);
-            this.maskedTextBox_TCNO.TabIndex = 6;
+            this.maskedTextBox_TCNO.TabIndex = 1;
             // 
             // FormHastaGiris
             // 
@@ -128,6 +128,7 @@
             this.MaximizeBox = false;
             this.Name = "FormHastaGiris";
             this.Text = "Hasta Giriş";
+            this.Load += new System.EventHandler(this.FormHastaGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

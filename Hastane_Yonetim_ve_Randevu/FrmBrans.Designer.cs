@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBrans));
             this.button_Guncelle = new System.Windows.Forms.Button();
             this.buttonSil = new System.Windows.Forms.Button();
             this.button_Ekle = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@
             this.button_Guncelle.TabIndex = 62;
             this.button_Guncelle.Text = "Güncelle";
             this.button_Guncelle.UseVisualStyleBackColor = false;
+            this.button_Guncelle.Click += new System.EventHandler(this.button_Guncelle_Click);
             // 
             // buttonSil
             // 
@@ -58,6 +60,7 @@
             this.buttonSil.TabIndex = 61;
             this.buttonSil.Text = "Sil";
             this.buttonSil.UseVisualStyleBackColor = false;
+            this.buttonSil.Click += new System.EventHandler(this.buttonSil_Click);
             // 
             // button_Ekle
             // 
@@ -68,9 +71,11 @@
             this.button_Ekle.TabIndex = 60;
             this.button_Ekle.Text = "Ekle";
             this.button_Ekle.UseVisualStyleBackColor = false;
+            this.button_Ekle.Click += new System.EventHandler(this.button_Ekle_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(256, 12);
             this.dataGridView1.Name = "dataGridView1";
@@ -78,6 +83,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(351, 183);
             this.dataGridView1.TabIndex = 59;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label3
             // 
@@ -85,7 +91,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(21, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.Size = new System.Drawing.Size(49, 17);
             this.label3.TabIndex = 55;
             this.label3.Text = "Branş:";
             // 
@@ -94,14 +100,14 @@
             this.comboBox_Brans.FormattingEnabled = true;
             this.comboBox_Brans.Location = new System.Drawing.Point(95, 61);
             this.comboBox_Brans.Name = "comboBox_Brans";
-            this.comboBox_Brans.Size = new System.Drawing.Size(125, 33);
+            this.comboBox_Brans.Size = new System.Drawing.Size(125, 28);
             this.comboBox_Brans.TabIndex = 51;
             // 
             // textBox_brans_İd
             // 
             this.textBox_brans_İd.Location = new System.Drawing.Point(95, 12);
             this.textBox_brans_İd.Name = "textBox_brans_İd";
-            this.textBox_brans_İd.Size = new System.Drawing.Size(125, 30);
+            this.textBox_brans_İd.Size = new System.Drawing.Size(125, 26);
             this.textBox_brans_İd.TabIndex = 50;
             // 
             // label2
@@ -110,13 +116,13 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(12, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 20);
+            this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 49;
             this.label2.Text = "Branş İd:";
             // 
             // FrmBrans
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Plum;
             this.ClientSize = new System.Drawing.Size(637, 204);
@@ -129,9 +135,12 @@
             this.Controls.Add(this.textBox_brans_İd);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "FrmBrans";
             this.Text = "FrmBrans";
+            this.Load += new System.EventHandler(this.FrmBrans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

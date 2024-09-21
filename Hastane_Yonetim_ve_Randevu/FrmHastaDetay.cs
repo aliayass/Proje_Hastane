@@ -84,8 +84,23 @@ namespace Hastane_Yonetim_ve_Randevu
 
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+       
+
+        private void button_RandevuAl_Click(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand("Update Tbl_Randevular Set RandevuDurum=1,HastaTC=@p1,HastaSikayet=@p2 where Randevuid=@p3",bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1",label_TCNO.Text);
+            komut.Parameters.AddWithValue("@p2",richTextBox_Sikayet.Text);
+            komut.Parameters.AddWithValue("@p3",textBox_id.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu alındı");
+        }
+
+        private void dataGridView_Aktif_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView_Aktif.SelectedCells[0].RowIndex;
+            textBox_id.Text = dataGridView_Aktif.Rows[secilen].Cells[0].Value.ToString();
 
         }
     }

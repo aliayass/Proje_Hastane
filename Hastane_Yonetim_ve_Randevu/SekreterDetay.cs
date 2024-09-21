@@ -24,7 +24,7 @@ namespace Hastane_Yonetim_ve_Randevu
         {
             label_TCNO.Text = TC;
 
-            SqlCommand komut = new SqlCommand("select SekreterAdSoyad from Tbl_Sekreterler where SekreterTC='"+TC+"'",bgl.baglanti());
+            SqlCommand komut = new SqlCommand("select SekreterAdSoyad from Tbl_Sekreterler where SekreterTC='"+TC+"'",bgl.baglanti()); 
             SqlDataReader dr1 = komut.ExecuteReader();
             while (dr1.Read())
             {
@@ -104,6 +104,21 @@ namespace Hastane_Yonetim_ve_Randevu
             FrmDoktorPaneli frm = new FrmDoktorPaneli();
             frm.Show();
            
+        }
+
+       
+
+        private void button_BransPaneli_Click(object sender, EventArgs e)
+        {
+            FrmBrans frm = new FrmBrans();
+            frm.Show();
+
+        }
+
+        private void button_Randevu_Click(object sender, EventArgs e)
+        {
+            FrmRandevuListesi frm = new FrmRandevuListesi();
+            frm.Show();
         }
     }
 }

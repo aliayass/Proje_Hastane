@@ -42,8 +42,9 @@
             this.maskedTextBox_TC.Location = new System.Drawing.Point(205, 129);
             this.maskedTextBox_TC.Mask = "00000000000";
             this.maskedTextBox_TC.Name = "maskedTextBox_TC";
-            this.maskedTextBox_TC.Size = new System.Drawing.Size(169, 30);
+            this.maskedTextBox_TC.Size = new System.Drawing.Size(169, 26);
             this.maskedTextBox_TC.TabIndex = 12;
+            this.maskedTextBox_TC.Text = "55555555555";
             // 
             // label3
             // 
@@ -51,7 +52,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(141, 174);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 25);
+            this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Şifre:";
             // 
@@ -59,9 +60,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(71, 126);
+            this.label2.Location = new System.Drawing.Point(86, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 25);
+            this.label2.Size = new System.Drawing.Size(101, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "TC Kimlik No:";
             // 
@@ -69,15 +70,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mistral", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(65, 36);
+            this.label1.Location = new System.Drawing.Point(99, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 61);
+            this.label1.Size = new System.Drawing.Size(296, 49);
             this.label1.TabIndex = 9;
             this.label1.Text = "Doktor Giriş Paneli";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateBlue;
+            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(205, 220);
             this.button1.Name = "button1";
@@ -91,17 +92,18 @@
             // 
             this.textBox_Sifre.Location = new System.Drawing.Point(205, 178);
             this.textBox_Sifre.Name = "textBox_Sifre";
-            this.textBox_Sifre.Size = new System.Drawing.Size(169, 30);
+            this.textBox_Sifre.Size = new System.Drawing.Size(169, 26);
             this.textBox_Sifre.TabIndex = 7;
+            this.textBox_Sifre.Text = "555";
             this.textBox_Sifre.UseSystemPasswordChar = true;
             // 
             // FrmDoktorGiris
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.SlateBlue;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(523, 318);
             this.Controls.Add(this.maskedTextBox_TC);
             this.Controls.Add(this.label3);
@@ -115,6 +117,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmDoktorGiris";
             this.Text = "Doktor Giriş";
+            this.Load += new System.EventHandler(this.FrmDoktorGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

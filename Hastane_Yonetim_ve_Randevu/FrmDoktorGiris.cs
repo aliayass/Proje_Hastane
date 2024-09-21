@@ -18,6 +18,7 @@ namespace Hastane_Yonetim_ve_Randevu
             InitializeComponent();
         }
         SqlBaglantisi bgl = new SqlBaglantisi();
+
         private void button1_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select * From Tbl_Doktorlar where DoktorTC=@p1 and DoktorSifre=@p2",bgl.baglanti());
@@ -27,6 +28,7 @@ namespace Hastane_Yonetim_ve_Randevu
             if (dr.Read())
             {
                 FormDoktorDetay frm = new FormDoktorDetay();
+                frm.TC = maskedTextBox_TC.Text;
                 frm.Show();
                 this.Hide();
             }
@@ -35,6 +37,11 @@ namespace Hastane_Yonetim_ve_Randevu
                 MessageBox.Show("Hatalı şifre veya TC.No girdiniz.");
             }
             bgl.baglanti().Close();
+        }
+
+        private void FrmDoktorGiris_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

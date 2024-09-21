@@ -42,7 +42,7 @@
             this.maskedTextBox_tc.Location = new System.Drawing.Point(249, 127);
             this.maskedTextBox_tc.Mask = "00000000000";
             this.maskedTextBox_tc.Name = "maskedTextBox_tc";
-            this.maskedTextBox_tc.Size = new System.Drawing.Size(169, 30);
+            this.maskedTextBox_tc.Size = new System.Drawing.Size(169, 26);
             this.maskedTextBox_tc.TabIndex = 1;
             this.maskedTextBox_tc.Text = "12345678910";
             // 
@@ -52,7 +52,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(185, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 25);
+            this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Şifre:";
             // 
@@ -62,7 +62,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(115, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 25);
+            this.label2.Size = new System.Drawing.Size(101, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "TC Kimlik No:";
             // 
@@ -72,7 +72,7 @@
             this.label1.Font = new System.Drawing.Font("Mistral", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(109, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 61);
+            this.label1.Size = new System.Drawing.Size(305, 49);
             this.label1.TabIndex = 9;
             this.label1.Text = "Sekreter Giriş Paneli";
             // 
@@ -92,7 +92,7 @@
             // 
             this.textBox_Sifre.Location = new System.Drawing.Point(249, 176);
             this.textBox_Sifre.Name = "textBox_Sifre";
-            this.textBox_Sifre.Size = new System.Drawing.Size(169, 30);
+            this.textBox_Sifre.Size = new System.Drawing.Size(169, 26);
             this.textBox_Sifre.TabIndex = 2;
             this.textBox_Sifre.Text = "123";
             this.textBox_Sifre.UseSystemPasswordChar = true;
@@ -100,7 +100,7 @@
             // FrmSekreterGiris
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Plum;
@@ -114,7 +114,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "FrmSekreterGiris";
             this.Text = "Sekreter Giriş";
             this.Load += new System.EventHandler(this.FrmSekreterGiris_Load);

@@ -64,6 +64,12 @@
     <Compile Include="FrmBrans.Designer.cs">
       <DependentUpon>FrmBrans.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDoktorBilgiDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorBilgiDüzenle.Designer.cs">
+      <DependentUpon>FrmDoktorBilgiDüzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDoktorGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,12 +81,6 @@
     </Compile>
     <Compile Include="FrmDoktorPaneli.Designer.cs">
       <DependentUpon>FrmDoktorPaneli.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmDrBilgiDüzenle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmDrBilgiDüzenle.Designer.cs">
-      <DependentUpon>FrmDrBilgiDüzenle.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDuyurular.cs">
       <SubType>Form</SubType>
@@ -132,7 +132,7 @@
     <Compile Include="SekreterDetay.Designer.cs">
       <DependentUpon>SekreterDetay.cs</DependentUpon>
     </Compile>
-    <Compile Include="SqlBağlantisi.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
     <EmbeddedResource Include="FormDoktorDetay.resx">
       <DependentUpon>FormDoktorDetay.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,14 +142,14 @@
     <EmbeddedResource Include="FrmBrans.resx">
       <DependentUpon>FrmBrans.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorBilgiDüzenle.resx">
+      <DependentUpon>FrmDoktorBilgiDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDoktorGiris.resx">
       <DependentUpon>FrmDoktorGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoktorPaneli.resx">
       <DependentUpon>FrmDoktorPaneli.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmDrBilgiDüzenle.resx">
-      <DependentUpon>FrmDrBilgiDüzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDuyurular.resx">
       <DependentUpon>FrmDuyurular.cs</DependentUpon>

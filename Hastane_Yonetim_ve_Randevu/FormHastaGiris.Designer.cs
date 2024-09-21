@@ -40,19 +40,22 @@
             // 
             // textBox_Sifre
             // 
-            this.textBox_Sifre.Location = new System.Drawing.Point(241, 151);
+            this.textBox_Sifre.Location = new System.Drawing.Point(181, 123);
+            this.textBox_Sifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox_Sifre.Name = "textBox_Sifre";
-            this.textBox_Sifre.Size = new System.Drawing.Size(169, 22);
+            this.textBox_Sifre.Size = new System.Drawing.Size(128, 20);
             this.textBox_Sifre.TabIndex = 2;
+            this.textBox_Sifre.Text = "111";
             this.textBox_Sifre.UseSystemPasswordChar = true;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.SlateBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(241, 193);
+            this.button1.Location = new System.Drawing.Point(181, 157);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 41);
+            this.button1.Size = new System.Drawing.Size(127, 33);
             this.button1.TabIndex = 3;
             this.button1.Text = "Giriş Yap";
             this.button1.UseVisualStyleBackColor = false;
@@ -62,9 +65,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mistral", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(101, 9);
+            this.label1.Location = new System.Drawing.Point(76, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 61);
+            this.label1.Size = new System.Drawing.Size(282, 49);
             this.label1.TabIndex = 2;
             this.label1.Text = "Hasta Giriş Paneli";
             // 
@@ -73,9 +77,10 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Silver;
-            this.linkLabel1.Location = new System.Drawing.Point(285, 250);
+            this.linkLabel1.Location = new System.Drawing.Point(214, 203);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(72, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(56, 20);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Üye Ol";
@@ -85,9 +90,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(107, 99);
+            this.label2.Location = new System.Drawing.Point(80, 80);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 25);
+            this.label2.Size = new System.Drawing.Size(101, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "TC Kimlik No:";
             // 
@@ -95,28 +101,31 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(177, 147);
+            this.label3.Location = new System.Drawing.Point(133, 119);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 25);
+            this.label3.Size = new System.Drawing.Size(46, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Şifre:";
             // 
             // maskedTextBox_TCNO
             // 
-            this.maskedTextBox_TCNO.Location = new System.Drawing.Point(241, 102);
+            this.maskedTextBox_TCNO.Location = new System.Drawing.Point(181, 83);
+            this.maskedTextBox_TCNO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.maskedTextBox_TCNO.Mask = "00000000000";
             this.maskedTextBox_TCNO.Name = "maskedTextBox_TCNO";
-            this.maskedTextBox_TCNO.Size = new System.Drawing.Size(169, 22);
+            this.maskedTextBox_TCNO.Size = new System.Drawing.Size(128, 20);
             this.maskedTextBox_TCNO.TabIndex = 1;
+            this.maskedTextBox_TCNO.Text = "11111111111";
             // 
             // FormHastaGiris
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(537, 297);
+            this.BackColor = System.Drawing.Color.SlateBlue;
+            this.ClientSize = new System.Drawing.Size(403, 241);
             this.Controls.Add(this.maskedTextBox_TCNO);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -125,6 +134,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox_Sifre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FormHastaGiris";
             this.Text = "Hasta Giriş";

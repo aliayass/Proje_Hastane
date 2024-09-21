@@ -21,7 +21,7 @@ namespace Hastane_Yonetim_ve_Randevu
 
         private void FrmDoktorPaneli_Load(object sender, EventArgs e)
         {
-            //branşları çekme
+              //branşları çekme
             SqlCommand komut2 = new SqlCommand("Select BransAd from Tbl_Branslar",bgl.baglanti());
             SqlDataReader dr1 = komut2.ExecuteReader();
             while (dr1.Read())
@@ -74,7 +74,15 @@ namespace Hastane_Yonetim_ve_Randevu
 
         private void button_Guncelle_Click(object sender, EventArgs e)
         {
-          //  SqlCommand komut = new SqlCommand("update from Tbl_Doktorlar where DoktorTC");
+            SqlCommand komut = new SqlCommand("Update Tbl_Doktorlar set DoktorAd=@d1,DoktorSoyad=@d2,DoktorBrans=@d3,DoktorSifre=@d4  where DoktorTC=@d5",bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1", textBox_Ad.Text);
+            komut.Parameters.AddWithValue("@d2",textBox_Soyad.Text);
+            komut.Parameters.AddWithValue("@d3",comboBox_Brans.Text);
+            komut.Parameters.AddWithValue("@d4", textBox_Sifre.Text);
+            komut.Parameters.AddWithValue("@d5", maskedTextBox_TC.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Doktor bilgisi güncellendi");
         }
     }
 }
